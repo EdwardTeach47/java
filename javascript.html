@@ -1,30 +1,67 @@
-<!DOCTYPE html!>
-<html!>
-  <body>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
 
-    <h1>JavaScript</h1>
-    <button type = "button"
-      onclick= "document.getElementById('demo').innerHTML = Date()">
-      Botão da data e hora</button>
-      <p id= "demo"> A data aparecerá aqui</p>
-    
-    <h1>JavaScript2</h1>
-    
-    <p id="demo2"></p>
-    <script>
-      document.getElementByid('demo2').immerHTML = "Preenchimento";
-    </script>
+    h1 {
+      text-align: center;
+      color: #333333;
+    }
 
-    <h1>JavaScript3</h1>
-    
-    <p id="demo3"> Aterando estilo</p>
-    <script>
-      function alretat_estilo(){
-        document.getElementById('demo3').style.fontsize = "25px";
-        document.getElementById('demo3').style.color= "red";
-        document.getElementById('demo3').style.backgroundColor = "yellow";
-      }
-    </script>
-    <button type = "button" onclick = "alretat_estilo()"> click Me!</button> 
-  </body>
-</html!>
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .news-item {
+      border: 1px solid #cccccc;
+      margin: 10px;
+      padding: 10px;
+      background-color: #ffffff;
+    }
+
+    .news-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .news-date {
+      font-size: 14px;
+      color: #999999;
+    }
+
+    .news-content {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Notícias Simples</h1>
+  <div class="container">
+    <div class="news-item">
+      <div class="news-title">Brasil registra mais de 500 mil mortes por Covid-19</div>
+      <div class="news-date">02/10/2023</div>
+      <div class="news-content">
+        O Brasil ultrapassou neste sábado (2) a marca de 500 mil mortes por Covid-19, segundo dados do consórcio de veículos de imprensa. O país é o segundo do mundo a atingir esse número, depois dos Estados Unidos, que têm mais de 700 mil óbitos pela doença.
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="news-title">Eleições na Alemanha terminam com empate entre social-democratas e conservadores</div>
+      <div class="news-date">26/09/2023</div>
+      <div class="news-content">
+        As eleições na Alemanha terminaram neste domingo (26) com um empate técnico entre os social-democratas do SPD e os conservadores da CDU/CSU, abrindo um período de incerteza sobre quem será o sucessor de Angela Merkel no comando da maior economia da Europa.
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="news-title">Facebook lança óculos inteligentes em parceria com a Ray-Ban</div>
+      <div class="news-date">09/09/2023</div>
+      <div class="news-content">
+        O Facebook lançou nesta quinta-feira (9) seus primeiros óculos inteligentes, chamados de Ray-Ban Stories, em parceria com a marca de óculos Ray-Ban. Os dispositivos permitem tirar fotos, gravar vídeos, ouvir música e atender chamadas telefônicas.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
